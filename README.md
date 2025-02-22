@@ -34,4 +34,9 @@ Ex: `python extract_openweather.py "Porto Alegre" "Rio Grande do Sul" "BR"`
 
 2. Como importar como módulo:
 
-`from extract_openweather import ExtractOpenWeather`
+```from extract_openweather import ExtractOpenWeather
+
+ExtractOpenWeather.extract_weather(city_name, state_name, country_code)
+ExtractOpenWeather.extract_weather_forecast(city_name, state_name, country_code)
+ExtractOpenWeather.extract_air_pollution(city_name, state_name, country_code)
+ExtractOpenWeather.extract_air_pollution_forecast(city_name, state_name, country_code)```
