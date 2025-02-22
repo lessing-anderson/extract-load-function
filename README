@@ -1,0 +1,27 @@
+Pré requisitos
+
+1. Instalar python-dotenv:
+
+pip install python-dotenv
+
+2. Crie um arquivo .env:
+
+OPENWEATHER_API_KEY=chave_da_api
+
+
+Extratores
+
+extract_openweather.py 
+
+Usa versão free da API da OpenWeather (https://openweathermap.org/api) para extrair dados de previsão do tempo, tempo atual e qualidade do ar atual e prevista da cidade que é passada por parâmetro.
+Pode ser executado diretamente ou ser importado como um módulo em outro script.
+Funções disponíveis: extract_forecast , extract_weather, extract_air_pollution.
+
+Como usar diretamente: 
+
+python extract_openweather.py <city_name> <state_name> <country_code>
+
+Ex: python extract_openweather.py "Porto Alegre" "Rio Grande do Sul" "BR"
+
+Como importar como módulo:
+
